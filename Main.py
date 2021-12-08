@@ -27,7 +27,7 @@ def todo():
             tasks.append(todo)
             clear('tasks')
             put_table([
-                [todo , put_buttons(['Click to complete'],onclick=partial(completed,task = todo, tasks = tasks)),put_buttons(['Priority'],onclick=partial(priority,task = todo, tasks = tasks))] for todo in tasks
+                [todo , put_buttons(['Click to complete'],onclick=partial(completed,task = todo, tasks = tasks))
             ])
 
 
